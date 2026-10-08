@@ -1,5 +1,6 @@
 
 import React, { useState, useCallback, useRef, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Header from './components/Header';
 import InputForm from './components/InputForm';
 import StrategyDashboard from './components/StrategyDashboard';
@@ -220,6 +221,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </footer>
+      <SpeedInsights />
     </div>
   );
 };
